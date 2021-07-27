@@ -1,0 +1,15 @@
+:root {
+--PRIMARY_COLOR :#262469 ;
+--SECONDARY_COLOR_1:#382a75;
+--SECONDARY_COLOR_2 : #a42e7f;
+--TEXT_COLOR :#FFFF;
+}
+
+*{
+    margin:0;
+}
+
+body{
+    background-color: var(--PRIMARY_COLOR);
+    color: var(--TEXT_COLOR);
+}

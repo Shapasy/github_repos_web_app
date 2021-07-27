@@ -1,0 +1,84 @@
+
+.repo_card{
+    width: 100%;
+    min-height: 120px;
+    background-color: var(--SECONDARY_COLOR_1);
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    border: 1px solid var(--SECONDARY_COLOR_1);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--SECONDARY_COLOR_2);
+    animation-name: repo_card_animation;
+    animation-duration: 1s;
+}
+
+@keyframes repo_card_animation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.repo_card_title{
+    display: inline;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.repo_card_description{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.repo_card_user_avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.repo_card_details{
+    width: 100%;
+    padding: 0px 10px;
+    overflow-x: auto;
+}
+
+.repo_card_counter_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo_card_counter{
+    display: flex;
+}
+
+.repo_card_medium_screen_date_container{
+    text-transform: capitalize;
+    display: none;
+}
+
+@media screen and (min-width:510px) {
+    .repo_card_counter{
+        width: 100px;
+    }
+    .repo_card_title{
+        font-size: 25px;
+    }
+    .repo_card_description{
+        font-size: 17px;
+    }
+    .repo_card_counter_container{
+    justify-content: flex-start;
+    align-items: center;
+    }
+    .repo_card_medium_screen_date_container{
+        display: inline-block;
+    }
+    .repo_card_small_screen_date_container{
+        display: none;
+    }
+}
+
+

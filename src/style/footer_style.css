@@ -1,0 +1,7 @@
+
+#footer_root{
+    background-color: var(--SECONDARY_COLOR_2);
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

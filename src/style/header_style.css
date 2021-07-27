@@ -1,0 +1,8 @@
+
+#header_root{
+    background-color: var(--SECONDARY_COLOR_2);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
