@@ -11,8 +11,12 @@ const get_date_one_month_age = () => {
 
 export async function get_one_month_ago_repos(page_index: number) {
     let date_one_month_age: string = get_date_one_month_age()
+<<<<<<< HEAD
     const url = `${REACT_APP_API_URL}/search/repositories?q=created:>${date_one_month_age}&page=${page_index}
         &per_page=${REACT_APP_NUMBER_OF_REPOS_PER_PAGE}&sort=stars&order=desc`
+=======
+    const url = `/search/repositories?q=created:>${date_one_month_age}&page=${page_index}&per_page=${REACT_APP_NUMBER_OF_REPOS_PER_PAGE}&sort=stars&order=desc`
+>>>>>>> 8f3d6de29a96217526b0045179c4ff546a142d6b
     const result = await axios.get(url);
     return result.data;
 }
