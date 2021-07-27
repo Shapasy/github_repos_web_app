@@ -1,0 +1,13 @@
+ [[redirects]]
+  from = "/api/users/tickets/"
+  to = "https://some-external-site.com/api/users/tickets/"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
+
+[[redirects]]
+  from = "/api/users/cars/*"
+  to = "https://some-external-site.com/api/users/cars/:splat"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
