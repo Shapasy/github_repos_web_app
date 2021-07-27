@@ -1,0 +1,2 @@
+/search/* https://api.github.com/:splat 200
+/* /index.html 200      
