@@ -63,7 +63,7 @@ export const RepoCard: FC<RepoCardSchema> = (props: RepoCardSchema) => {
             <br />
             <div className="repo_card_counter_container">
                 <CounterCard image_src={star_image}>
-                    <p>&nbsp;{format_number(100200)}</p>
+                    <p>&nbsp;{format_number(repo.nb_stars)}</p>
                 </CounterCard>
                 <CounterCard image_src={warning_image}>
                     <p>&nbsp;{format_number(repo.nb_issues)}</p>
